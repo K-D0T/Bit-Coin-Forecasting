@@ -11,18 +11,18 @@ import datetime
 from selenium import webdriver
 import statistics
 
-#executable_path = ('/Users/Kaiden Thrailkill/Desktop/Environment/chromedriver_win32/chromedriver.exe')
-#driver = webdriver.Chrome(executable_path=executable_path)
-#driver.get('https://finance.yahoo.com/quote/BTC-USD/history?p=BTC-USD')
-#time_period = driver.find_element_by_xpath('//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[1]/div[1]/div[1]/span[2]/span/input')
-#time_period.click()
-#Max = driver.find_element_by_xpath('//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[1]/div[1]/div[1]/span[2]/div/div[1]/span[8]')
-#Max.click()
-#done = driver.find_element_by_xpath('//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[1]/div[1]/div[1]/span[2]/div/div[3]/button[1]')
-#done.click()
-#data = driver.find_element_by_xpath('//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[1]/div[2]/span[2]/a')
-#data.click()
-#time.sleep(10)
+executable_path = ('Path to chrome driver')
+driver = webdriver.Chrome(executable_path=executable_path)
+driver.get('https://finance.yahoo.com/quote/BTC-USD/history?p=BTC-USD')
+time_period = driver.find_element_by_xpath('//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[1]/div[1]/div[1]/span[2]/span/input')
+time_period.click()
+Max = driver.find_element_by_xpath('//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[1]/div[1]/div[1]/span[2]/div/div[1]/span[8]')
+Max.click()
+done = driver.find_element_by_xpath('//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[1]/div[1]/div[1]/span[2]/div/div[3]/button[1]')
+done.click()
+data = driver.find_element_by_xpath('//*[@id="Col1-1-HistoricalDataTable-Proxy"]/section/div[1]/div[2]/span[2]/a')
+data.click()
+time.sleep(10)
 
 
 
@@ -34,7 +34,7 @@ matplotlib.rcParams['xtick.labelsize'] = 12
 matplotlib.rcParams['ytick.labelsize'] = 12
 matplotlib.rcParams['text.color'] = 'k'
 
-df = pd.read_csv("/Users/Kaiden Thrailkill/Downloads/BTC-USD.csv")
+df = pd.read_csv("/Downloads/BTC-USD.csv")
 
 #df.rename(columns={' Open ': 'Open'}, inplace=True)
 
